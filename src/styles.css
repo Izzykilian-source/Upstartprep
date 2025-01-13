@@ -1,0 +1,67 @@
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+/* Background Animasi Halus */
+.hero-bg {
+    background: linear-gradient(120deg, #d1e8ff, #f3f4f6);
+    background-size: 200% 200%;
+    animation: backgroundMove 8s infinite alternate;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Animasi Masuk (Fade-In) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Responsif Dasar */
+@media (max-width: 640px) {
+    .text-center {
+        text-align: center;
+    }
+}
+
+.hero-content a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+}
+.hero-content a:hover {
+    transform: translateY(-2px);
+}
+.hero-content .bg-blue-600 {
+    background-color: #1d4ed8;
+}
+.hero-content .bg-blue-600:hover {
+    background-color: #1e40af;
+}
+.hero-content .border-blue-600 {
+    border-color: #1d4ed8;
+}
+.hero-content .border-blue-600:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+}
