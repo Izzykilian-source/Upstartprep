@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpstartPrep - Elevate Your SAT Success</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .hero-background {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: background-image 0.5s ease-in-out;
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #1e3a8a;
+        }
+        .btn-secondary {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #2563eb;
+            color: #fff;
+        }
+        .card {
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Hero Section -->
+    <header id="hero" class="relative min-h-screen flex items-center hero-background" style="background-image: url('img/placeholder.jpg');">
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content w-full text-center px-8 text-white">
+            <div class="max-w-lg mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Unlock Your Potential with UpstartPrep
+                </h1>
+                <p class="text-lg md:text-xl mb-8">
+                    Tailored SAT preparation designed to help you excel with confidence and achieve your highest goals.
+                </p>
+                <div class="flex flex-col sm:flex-row sm:justify-center gap-4">
+                    <a href="#features" class="btn-primary text-center">
+                        Get Started Today
+                    </a>
+                    <a href="#contact" class="btn-secondary text-center">
+                        Learn More About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: Features -->
+    <section id="features" class="py-16 bg-gray-100">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <h2 class="text-3xl font-semibold mb-6">Why UpstartPrep?</h2>
+            <p class="text-gray-600 mb-12">
+                Empowering students with the tools, strategies, and guidance to achieve their best SAT scores.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-medium mb-4">Personalized Study Plans</h3>
+                    <p class="text-gray-600">
+                        Customized roadmaps designed to align with your unique strengths and areas for growth.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-medium mb-4">Expert-Led Strategies</h3>
+                    <p class="text-gray-600">
+                        Learn proven techniques and strategies from top SAT educators and mentors.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-medium mb-4">Simulated Test Environments</h3>
+                    <p class="text-gray-600">
+                        Practice under real SAT conditions to build confidence and improve performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Testimonials -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <h2 class="text-3xl font-semibold mb-6">What Our Students Say</h2>
+            <p class="text-gray-600 mb-12">
+                Hear from students who transformed their SAT scores with UpstartPrep.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <p class="text-gray-600 mb-4">
+                        "UpstartPrep helped me improve my SAT score by 150 points! The personalized study plan and expert guidance made all the difference."
+                    </p>
+                    <h4 class="text-lg font-medium">- Sarah L., Class of 2024</h4>
+                </div>
+                <div class="card">
+                    <p class="text-gray-600 mb-4">
+                        "The simulated tests were so helpful in building my confidence. I felt fully prepared on test day, and it showed in my results."
+                    </p>
+                    <h4 class="text-lg font-medium">- James T., Class of 2023</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Call to Action -->
+    <section id="cta" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-3xl font-semibold mb-6">Ready to Start Your SAT Journey?</h2>
+            <p class="text-lg mb-8">
+                Take the first step towards achieving your dream SAT score. Sign up with UpstartPrep today!
+            </p>
+            <a href="#" class="btn-primary text-center">
+                Sign Up Now
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Daftar URL gambar carousel
+        const carouselImages = [
+            "img/1 (1).jpg",
+            "img/1 (2).jpg",
+            "img/1 (3).jpg",
+            "img/1 (4).jpg",
+        ];
+
+        // Elemen hero
+        const heroElement = document.getElementById('hero');
+
+        // Preload semua gambar
+        function preloadImages(imageUrls) {
+            imageUrls.forEach((url) => {
+                const img = new Image();
+                img.src = url;
+            });
+        }
+
+        // Panggil fungsi preload
+        preloadImages(carouselImages);
+
+        // Index awal
+        let currentIndex = 0;
+
+        // Fungsi untuk mengganti gambar background
+        function changeBackground() {
+            currentIndex = (currentIndex + 1) % carouselImages.length;
+            heroElement.style.backgroundImage = `url('${carouselImages[currentIndex]}')`;
+        }
+
+        // Interval otomatis setiap 7 detik
+        setInterval(changeBackground, 7000);
+    </script>
+</body>
+</html>
